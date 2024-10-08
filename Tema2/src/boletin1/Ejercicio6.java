@@ -24,7 +24,7 @@ public class Ejercicio6 {
 		// soluciones reales), igual a 0 (solo hay una solucion) y mayor que 0 (hay dos
 		// soluciones)
 		if (a == 0) {
-			System.out.println("La solución es " + -c/b);
+			System.out.println("La solución es " + - (double)c/b);
 		} else if (b * b - 4 * a * c < 0) {
 			System.out.println("No existen soluciones reales");
 		} else if (b * b - 4 * a * c == 0) {
