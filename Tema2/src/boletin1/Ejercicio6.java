@@ -23,7 +23,9 @@ public class Ejercicio6 {
 		// Despues separo los casos en los que la raiz sea menor que 0 ( no hay
 		// soluciones reales), igual a 0 (solo hay una solucion) y mayor que 0 (hay dos
 		// soluciones)
-		if (b * b - 4 * a * c < 0) {
+		if (a == 0) {
+			System.out.println("La solución es " + -c/b);
+		} else if (b * b - 4 * a * c < 0) {
 			System.out.println("No existen soluciones reales");
 		} else if (b * b - 4 * a * c == 0) {
 			System.out.println((-b) / (2 * a));

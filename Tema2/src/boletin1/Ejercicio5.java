@@ -30,7 +30,7 @@ public class Ejercicio5 {
 			System.out.println(num2 + "," + num1 + "," + num3);
 		} else if (num3>=num1 && num1>=num2) {
 			System.out.println(num3 + "," + num1 + "," + num2);
-		} else if (num3>=num2 && num2>=num1) {
+		} else {
 			System.out.println(num3 + "," + num2 + "," + num1);
 		}
 		//cierro el escáner
