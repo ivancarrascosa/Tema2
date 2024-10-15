@@ -22,17 +22,8 @@ public class Ejercicio4 {
 		decenas = num / 10;
 		// Separo los casos no generales, desde el 1 hasta el 15 y todos los múltiplos
 		// de 10
-		if (num <= 15 || unidades == 0) {
+		if (num <= 15 && num>=10 || unidades == 0) {
 			switch (num) {
-			case 1 -> System.out.println("uno");
-			case 2 -> System.out.println("dos");
-			case 3 -> System.out.println("tres");
-			case 4 -> System.out.println("cuatro");
-			case 5 -> System.out.println("cinco");
-			case 6 -> System.out.println("seis");
-			case 7 -> System.out.println("siete");
-			case 8 -> System.out.println("ocho");
-			case 9 -> System.out.println("nueve");
 			case 10 -> System.out.println("diez");
 			case 11 -> System.out.println("once");
 			case 12 -> System.out.println("doce");
@@ -51,6 +42,7 @@ public class Ejercicio4 {
 
 		} else {
 			switch (decenas) {
+			case 0 -> decenasPrint = "";
 			case 1 -> decenasPrint = "dieci";
 			case 2 -> decenasPrint = "veinti";
 			case 3 -> decenasPrint = "treinta y ";
