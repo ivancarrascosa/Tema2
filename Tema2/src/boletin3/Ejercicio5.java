@@ -25,7 +25,9 @@ public class Ejercicio5 {
 		//Creo un condicional para si la respuesta es igual a la suma y hago print de si la persona ha acertado o no
 		if (suma == respuesta) {
 			System.out.println("Respuesta correcta");
-		} else System.out.println("Respuesta incorrecta");
+		} else {
+			System.out.println("Respuesta incorrecta");
+		}
 		//Cierro el escáner
 		reader.close();
 	}

@@ -17,10 +17,10 @@ public class Ejercicio4 {
 		int cont = 1;
 		//Creo el escáner
 		Scanner reader = new Scanner(System.in);
-		//Pido al usuario un número y lo almaceno
-		System.out.println("Introduzca un número entero");
-		num = reader.nextInt();
 		while (cont <= 10) {
+			//Pido al usuario un número y lo almaceno
+			System.out.println("Introduzca un número entero");
+			num = reader.nextInt();
 			//En caso de que sea 0 aumento en 1 el contador de ceros
 			if (num == 0) {
 				numeroCeros++;
@@ -32,17 +32,11 @@ public class Ejercicio4 {
 			} else {
 				sumaPositivos += num;
 			}
-			if (cont == 10) {
-				break;
-			} else {
-				System.out.println("Introduzca un número entero");
-				num = reader.nextInt();
-			}
 			cont++;
 		}
 		media = (double) sumaNegativos/contadorNegativos;
 		System.out.println("La suma de los números positivos es " + sumaPositivos 
-				+ ", la media de los números negativos es " + media 
+				+ (contadorNegativos == 0 ? ", no se ha introducido ningún número negativo": ", la media de los números negativos es " + media) 
 				+ " y se han introducido " + numeroCeros + " ceros.");
 		//Cierro el escáner
 		reader.close();
