@@ -13,28 +13,34 @@ public class Ejercicio5 {
 		// Creo una variable para el límite inferior del random, inicializada en 1
 		// porque es el número más bajo
 		int inf = 1;
-		//Creo un string para guardar mayor, menor o igual
+		// Creo un string para guardar mayor, menor o igual
 		String respuesta;
 		// Creo un objeto random
 		Random rand = new Random();
-		//Creo un escáner 
+		// Creo un escáner
 		Scanner reader = new Scanner(System.in);
-		
+
 		// Con un bucle do while voy generando un número nuevo
 		do {
-			numRandom = rand.nextInt(inf,sup);
+			numRandom = rand.nextInt(inf, sup);
 			System.out.println(numRandom);
 			respuesta = reader.nextLine();
+			// Si la respuesta es menor, significa que el número en el que piensa la persona
+			// es mayor y debemos aumentar el límite inferior hasta ese número +1, para que
+			// no se repita
 			if (respuesta.equals("menor")) {
 				inf = numRandom + 1;
 			}
+			// Si la respuesta es mayor, significa que el número en el que piensa la persona
+			// es menor, entonces aumentamos el límite superior al número dado, este no está
+			// incluido en el random así que no nos hace falta restarle 1
 			if (respuesta.equals("mayor")) {
 				sup = numRandom;
 			}
-		
+
 		} while (!respuesta.equals("igual"));
 		System.out.println("He acertado");
-		//Cierro el escáner
+		// Cierro el escáner
 		reader.close();
 	}
 
