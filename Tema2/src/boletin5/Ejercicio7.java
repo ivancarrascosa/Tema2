@@ -29,6 +29,8 @@ public class Ejercicio7 {
 			case "B" -> System.out.println("El resultado de la resta es " + (num1 - num2));
 			case "C" -> System.out.println("El resultado de la multiplicación es " + (num1 * num2));
 			case "D" -> System.out.println("El resultado de la división es " + (num1 / num2));
+			case "E" -> System.out.println("Saliendo del programa");
+			default -> System.out.println("Opción no válida");
 			}
 		} while (!operacion.equals("E"));
 		// Cierro el escáner
