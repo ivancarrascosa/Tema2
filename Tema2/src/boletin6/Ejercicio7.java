@@ -16,12 +16,12 @@ public class Ejercicio7 {
 		n = reader.nextInt();
 		// Creo un for que vaya comprobando desde el 2 hasta la mitad del número
 		// introducido si n módulo cada número es 0, en caso de serlo no será primo
-		for (int i = 2 ; i <= n/2 && divisible == false ; i++) {
+		for (int i = 2 ; i <= n/2 && !divisible ; i++) {
 			if (n%i == 0) {
 				divisible = true;
 			}
 		}
-		if (divisible == true) {
+		if (divisible) {
 			System.out.println("El número no es primo");
 		} else {
 			System.out.println("El número es primo");
