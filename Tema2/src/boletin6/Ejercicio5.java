@@ -20,7 +20,7 @@ public class Ejercicio5 {
 		for (int i = 1; i <= n; i++) {
 			res *= i;
 		}
-		System.out.println(n + "!=" + res);
+		System.out.println(n + "! = " + res);
 		// Cierro el escáner
 		reader.close();
 	}
