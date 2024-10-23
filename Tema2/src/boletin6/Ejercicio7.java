@@ -21,7 +21,7 @@ public class Ejercicio7 {
 				divisible = true;
 			}
 		}
-		if (divisible) {
+		if (divisible || n == 1) {
 			System.out.println("El número no es primo");
 		} else {
 			System.out.println("El número es primo");
