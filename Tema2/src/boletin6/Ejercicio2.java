@@ -13,7 +13,7 @@ public class Ejercicio2 {
 		System.out.println("Introduzca un número para contar desde 1 hasta ese:");
 		n = reader.nextInt();
 		//Creo un bucle for para contar de uno hasta el número introducido
-		for (int i = 3 ; i<=n ; i+=3) {
+		for (int i = 0 ; i<=n ; i+=3) {
 			System.out.println(i);
 		}
 		//Cierro el escáner
