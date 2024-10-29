@@ -12,6 +12,8 @@ public class Ejercicio3 {
 		// Creo una variable error para no crear un bucle infinito en el do while
 		boolean error;
 		
+		// Creo un contador para las iteraciones
+		int cont = 1;
 		// Creo el escáner
 		Scanner reader = new Scanner(System.in);
 		
@@ -34,10 +36,28 @@ public class Ejercicio3 {
 			// algo que no sea un entero.
 			reader.nextLine();
 		} while (error);
-		
-		for (int i = 1 ; i <= ladoTriangulo ; )
-		System.out.println(ladoTriangulo);
-
+		int copia = ladoTriangulo;
+		for (int i = 1 ; i <= ladoTriangulo ; i++)
+		System.out.print("* ");
+		System.out.println("");
+		if (ladoTriangulo%2 != 0) {
+			for (int j = 1; j<=ladoTriangulo-1 ; j++) {
+				for (int i = 1 ; i <= j ; i++) {
+					System.out.print(" ");	
+				}
+				System.out.print("*");
+				for (int i = copia; i > 0 ; i--) {
+					System.out.print(" ");
+					
+				}
+				copia-=2;
+				if (copia <= -2) {
+					break;
+				}
+				System.out.println("*");
+			
+		}
+		}
 	}
 
 }
