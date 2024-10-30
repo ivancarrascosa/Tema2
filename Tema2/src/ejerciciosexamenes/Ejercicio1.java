@@ -37,20 +37,31 @@ public class Ejercicio1 {
 			// algo que no sea un entero.
 			reader.nextLine();
 		} while (error);
+		// Imprimo la parte de arriba, que serán tantos asteriscos como la longitud del
+		// lado
 		for (int i = 0; i <= longLado; i++) {
 			System.out.print("*");
 		}
+		// Paso a la siguente línea
 		System.out.println("");
+
+		// Para el resto de filas, que seán la longitud de lado menos la de arriba y la
+		// de abajo (2)
 		for (int i = 0; i <= longLado - 2; i++) {
+			// Imprimo un asterisco
 			System.out.print("*");
+			// Imprimo espacios de la longitud del lado menos los dos asteriscos que habrá
 			for (int j = 0; j <= longLado - 2; j++) {
 				System.out.print(" ");
 			}
+			// Imprimo otro asterisco y paso a la siguiente línea
 			System.out.println("*");
 		}
+		// Imprimo la última fila, que es como la primera
 		for (int i = 0; i <= longLado; i++) {
 			System.out.print("*");
 		}
+		// Cierro el escáner
 		reader.close();
 
 	}
