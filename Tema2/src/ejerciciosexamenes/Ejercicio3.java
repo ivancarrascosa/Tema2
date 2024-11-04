@@ -42,7 +42,7 @@ public class Ejercicio3 {
 		for (int i = 1; i <= ladoTriangulo; i++)
 			System.out.print("* ");
 		System.out.println("");
-		// Creo un for para los espacios que tengo que introducir
+		// Creo un for para los espacios que tengo que introducir, que desde el 3 será cada número impar
 		for (int i = 3; i < ladoTriangulo; i++) {
 			espacio += 2;
 		}
